@@ -4,7 +4,7 @@ static void loadLLB(CFNotificationCenterRef center, void *observer, CFStringRef 
 }
 int main(int argc, char **argv, char **envp)
 {
-	CFNotificationCenterAddObserver(CFNotificationCenterGetDarwinNotifyCenter(), NULL, loadLLB, CFSTR("com.kpwn0.loadllb"), NULL,     CFNotificationSuspensionBehaviorCoalesce);
+	CFNotificationCenterAddObserver(CFNotificationCenterGetDarwinNotifyCenter(), NULL, loadLLB, CFSTR("com.kpwn0.daemonx.llb"), NULL,     CFNotificationSuspensionBehaviorCoalesce);
 	CFRunLoopRun();
 	return 0;
 }
